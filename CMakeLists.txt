@@ -5,4 +5,5 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(grundy-number grundy-number/grundy-number.cpp)
 add_executable(fibonacci-numbers fibonacci-numbers/fibonacci-numbers.cpp)
+add_executable(gcd-lcm gcd-lcm/gcd-lcm.cpp)
 
