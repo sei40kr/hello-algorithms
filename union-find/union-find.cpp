@@ -1,4 +1,5 @@
 #include <algorithm>
+#define REP(i, n) for (int i = 0; i < (n); ++i)
 
 // union-find.cpp
 // author: Seong Yong-ju <sei40kr@gmail.com>
@@ -10,7 +11,7 @@ const int MAX_N = 2014;
 int par[MAX_N];
 
 void init(int n) {
-  std::fill(par, par + n, -1);
+  REP(i, n) { par[i] = i; }
 }
 
 int root(int x) {
