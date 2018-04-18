@@ -5,6 +5,8 @@
 
 // segment-tree.cpp --- Segment tree implementation
 // author: Seong Yong-ju <sei40kr@gmail.com>
+//
+// Note that this implementation works only where N is the power of 2.
 
 using namespace std;
 
