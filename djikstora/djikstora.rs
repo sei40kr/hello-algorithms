@@ -3,7 +3,8 @@ use std::collections::BinaryHeap;
 use std::u32;
 
 struct Edge {
-    node: usize,
+    from: usize,
+    to: usize,
     cost: u32,
 }
 
@@ -43,7 +44,7 @@ fn shortest_path(n: usize, s: usize, g: usize, edges: &Vec<Vec<Edge>>) -> Option
 
             for edge in &edges[node] {
                 queue.push(State {
-                    node: edge.node,
+                    node: edge.to,
                     cost: cost + edge.cost,
                 });
             }
