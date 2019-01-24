@@ -34,6 +34,10 @@ fn shortest_path(n: usize, s: usize, g: usize, edges: &Vec<Vec<Edge>>) -> Option
     queue.push(State { node: s, cost: 0 });
 
     while let Some(State { node, cost }) = queue.pop() {
+        if node == g {
+            return Some(cost);
+        }
+
         if cost < dists[node] {
             dists[node] = cost;
 
@@ -46,9 +50,5 @@ fn shortest_path(n: usize, s: usize, g: usize, edges: &Vec<Vec<Edge>>) -> Option
         }
     }
 
-    if dists[g] != u32::MAX {
-        Some(dists[g])
-    } else {
-        None
-    }
+    None
 }
