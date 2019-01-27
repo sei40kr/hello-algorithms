@@ -1,4 +1,4 @@
-// topological-sort.rs --- Topological sort
+// dfs-topological-sort.rs --- Topological sort
 // author: Seong Yong-ju <sei40kr@gmail.com>
 
 struct Edge {
