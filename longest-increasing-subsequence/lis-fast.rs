@@ -5,6 +5,7 @@ use std::i32;
 // author: Seong Yong-ju <sei40kr@gmail.com>
 
 #[allow(dead_code)]
+// cf http://www.prefield.com/algorithm/dp/lis_fast.html
 fn lis(vec: &Vec<i32>) -> usize {
     let mut dp = vec![i32::MAX; vec.len()];
 
